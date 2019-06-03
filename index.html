@@ -30,7 +30,9 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                  <i class="fas fa-home"></i>
+                </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -80,8 +82,8 @@
             <br><br>
             My name's Jess, and I'm currently a mobile app developer based in Nashville, Tennessee. I recently graduated from Wellesley College in 2018, where I received my degree in Computer Science and French. 
             <br><br>
-            Though I got my start in mobile app development, I’m excited to branch out and experience other areas of computer science. I’m particularly interested in learning more about natural language processing. As an enthusiast of languages (both human and programming alike), I'm most energized about projects involving translation, bots, or speech recognition, for example.  
-              <br><br>
+            Though I got my start in mobile app development, I’m excited to branch out and experience other areas of computer science. I’m particularly interested in learning more about natural language processing. As an enthusiast of languages (of the human <i>and</i> programming variety), I'm most energized about projects involving translation, bots, or speech recognition, for example.  
+            <br><br>
             When I’m not at work, you might find me learning fingerstyle guitar, practicing new languages (currently, American Sign Language and Malayalam), or playing ultimate frisbee.</p>
         </div>
       </div>
@@ -192,7 +194,7 @@
           </a>
           <div class="portfolio-caption">
             <h4>PixelDust</h4>
-            <p class="text-muted">Prototype desktop application that uses computer vision and machine learning to automatically recognize areas of interest in video traces from eye tracking studies. </p>
+            <p class="text-muted">Desktop application that leverages computer vision to automatically recognizes areas of interest in video traces from eye tracking studies. </p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -206,7 +208,7 @@
           </a>
           <div class="portfolio-caption">
             <h4>Optimal Flow for Biometric Authentication</h4>
-            <p class="text-muted">iOS app demonstrating an optimal login experience for Deloitte employees in terms of cybersecurity, user experience, and app design. </p>
+            <p class="text-muted">iOS app demonstrating an optimal mobile login experience for Deloitte employees.</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -220,7 +222,7 @@
           </a>
           <div class="portfolio-caption">
             <h4>Pre-Populated Expense Reports from Receipts</h4>
-            <p class="text-muted">Mobile app that leverages optical character recognition to extract relevant information from hotel receipts and pre-populate expense reports accordingly.</p>
+            <p class="text-muted">Mobile app that uses optical character recognition to extract relevant information from hotel receipts and pre-populate expense reports accordingly.</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -276,7 +278,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Skills</h2>
-          <!-- <h3 class="section-subheading text-muted"></h3> -->
+          <h3 class="section-subheading text-muted">Languages, tools, and technologies I have worked with</h3>
         </div>
       </div>
       <br><br>
@@ -514,13 +516,17 @@
                     and error prone. Through a participatory design
                     exercise with two eye tracking researchers, I identified three
                     significant challenges: search, extraction of code, and annotating
-                    transient objects. By applying computer vision algorithms
+                    transient objects. 
+                    <br><br>
+                    By applying computer vision algorithms
                     to video traces, I developed a mixed-initiative system called
                     PixelDust, which allows the researcher to train a system
                     to recognize different objects on a screen. My preliminary
                     results demonstrate the versatility of the approach; for example,
                     the system can recognize return statements, method
-                    signatures, tool tips, and dialog boxes.</p>
+                    signatures, tool tips, and dialog boxes.
+                    <br><br>
+                    This research won first place in the Student Research Competition of the 2016 SPLASH Conference in Amsterdam. Read more about PixelDust <a href = "p59-cherayil.pdf"> here </a>. 
                 
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -548,9 +554,13 @@
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Biometric Authentication</h2>
-                <p class="item-intro text-muted">Discovering the optimal login flow for Deloitte employees using biometrics as a form of multi-factor authentication</p>
+                <p class="item-intro text-muted">Discovering the optimal login flow for Deloitte employees using biometrics</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                <p>Until this project, Deloitte apps did not share a common strategy for multi-factor authentication. Striving for consistency in our suite of apps, I set out to find the optimal login experience for users in terms of security, design, and user experience. First, I did some research on existing APIs that enable biometric authentication, in order to find out what kinds of login scenarios were possible. I enumerated several such scenarios, each varying in certain aspects, such as fallback mechanism in case of biometric failure. Then, I created demo apps to showcase each scenario, and received user feedback from teams that focus on design, security, and user experience. After modifications, I was able to recommend a seamless login experience for users that was sharp-looking, secure, and user-friendly. This login experience is now standard for all of our mobile apps. 
+                <p>Until this project, Deloitte apps did not share a common strategy for multi-factor authentication. Striving for consistency in our suite of apps, I set out to find the optimal login experience for users in terms of security, design, and user experience, in order to apply that login flow to all apps moving forward.
+
+                <br><br> First, I did some research on existing APIs that enable biometric authentication, with the goal of finding out the possibilities and limitations of the libraries we were using. With this in mind, I enumerated several possible login scenarios and created demo apps that showcased each scenario in action. 
+
+                <br><br>After presenting these demo apps to end users and receiving their feedback, I was able to narrow down my options and recommend a seamless login experience for users that was sharp-looking, secure, and user-friendly. This login experience is now standard for all of our mobile apps moving forward. 
                 </p>
                 
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
@@ -579,9 +589,10 @@
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Pre-Populated Expense Reports from Receipts</h2>
-                <p class="item-intro text-muted">Leveraging OCR technology to pull information from receipts and pre-populate fields in an itemized expense report. </p>
+                <p class="item-intro text-muted">Leveraging OCR technology to turn receipts into itemized expense reports. </p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                <p>Filling out expense reports in Deloitte's existing expensing app is particularly time-consuming for hotel receipts, in which every charge (e.g. room charge, food expenses, tax) must be itemized per day. Several employees report spending hours expensing hotel receipts even after just a few days of travel. In this demo, we demonstrated the power of using optical character recognition (OCR) to extract all charges from a PDF receipt. Once extracted, our program  sorted the charges by date and filled out an itemized expense report accordingly. The user need only validate the report and hit submit, turning hours of expensing into sheer seconds.</p>
+                <p>Filling out expense reports in Deloitte's existing expensing app is particularly time-consuming for hotel receipts, in which every charge (e.g. room charges, food expenses, taxes) must be itemized per day. Several employees report spending hours expensing hotel receipts even after just a few days of travel. 
+                  <br><br>In this demo, we demonstrated the power of using optical character recognition (OCR) to extract all charges from a PDF receipt. Once extracted, our program  sorts the charges by date and fills out the corresponding fields of an itemized expense report. The user need only validate the report and hit submit, turning hours of expensing into sheer seconds. This prototype app proved the success of OCR in facilitating and quickening the process of itemizing expenses from hotel stays.</p>
          
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -611,7 +622,8 @@
                 <h2 class="text-uppercase">NGCIO OneDrive Automation</h2>
                 <p class="item-intro text-muted">Automating OneDrive account file methods</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                <p>Each year, the Next Generation CIO Academy takes place at Deloitte University, training 100 soon-to-be CIOs for their roles. This kind of preparation requires 100 separate OneDrive accounts, so that participants can refer to reference materials over the course of the week. It would be a pain for the academy organizers to manually log into each provisioned OneDrive account and upload the needed files. Furthermore, should any files need to be deleted, moved, or shared, someone would have to again log into each account one by one. Given the broken skeleton of an existing tool that uploaded documents to multiple OneDrive accounts simultaneously, I rebuilt the tool from the ground up, ensuring that the existing functionalities of uploading files and deleting files actually worked. In addition to this, I added functionality to move all academy materials to one folder and automatically share that folder with each participant.  </p>
+                <p>Each year, the Next Generation CIO Academy takes place at Deloitte University, training 100 soon-to-be CIOs for their roles. Participants are given countless reference materials over the course of the one-week academy via OneDrive accounts. In preparation for the event, academy organizers expect to log into each account, upload files, and delete files. After the event, academy organizers log into each account again, move all the files to a single folder, and share that folder with each participant. 
+                  <br><br>Manually logging into 100 identical OneDrive accounts, sometimes more than once per day, is tedious and invites human error. Instead, we decided to automate the process by creating a desktop application that uploads, deletes, moves, and shares files given a list of OneDrive usernames and passwords. Given the broken skeleton of an existing tool that uploaded documents to multiple OneDrive accounts simultaneously, I rebuilt the tool from the ground up, ensuring that the existing functionalities of uploading files and deleting files worked as expected. In addition to this, I added a new feature that moves all academy materials to one folder and automatically provides the academy organizers with an invitation link to send to the participants. This desktop tool significantly reduces the time it takes for academy organizers to distribute reference materials. </p>
               
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -641,7 +653,9 @@
                 <h2 class="text-uppercase">Jira to ADO Work Item Migration</h2>
                 <p class="item-intro text-muted">Automating the migration of work items from Jira to Azure DevOps</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                <p>The mobile channel at Deloitte started moving from Jira, an issue-tracking system, to the more holistic Azure DevOps. However, no tool existed to migrate issues automatically, so users had to manually create new issues in ADO, pull up the old Jira issues side by side, and re-populate all the fields themselves. To improve on this approach, I built a tool to automate the migration process. For each Jira issue, the tool fetched all the completed fields (e.g. type, status, priority, description), created a new issue in Azure DevOps, and then copied the old fields into the new issue. All that was needed on the user's end is to log into both Jira and VSTS, and then this console application takes care of the rest within minutes. </p>
+                <p>The mobile channel at Deloitte started moving from Jira, an issue-tracking system, to the more holistic Azure DevOps. However, no tool existed to migrate issues automatically, so users had to manually create new issues in ADO, pull up the old Jira issues side by side, and re-populate all the fields themselves. 
+
+                  <br><br>To improve on this approach, I built a tool to automate the migration process. For each Jira issue, the tool fetched all the fields (e.g. type, status, priority, description, etc.), created a new issue in Azure DevOps, and then copied the old fields into the new issue. All that is required on the user's end is to log into both Jira and VSTS, and then this console application takes care of the entire migration process, with changes reflected immediately. For a Jira project with around 1000 issues, this application migrated them to ADO in a matter of a few minutes.</p>
                
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -671,7 +685,9 @@
                 <h2 class="text-uppercase">Microsoft Intune Exploration</h2>
                 <p class="item-intro text-muted">Pushing provisioning profiles to apps nearing expiry using Intune</p>
                
-                <p>Provisioning profiles are certificates that are required for iOS apps to run on a device. Every year, provisioning profiles expire and must be renewed. Once they are renewed, if a user does not open an app for a 3-month period, the app will crash for the user, forcing them to reinstall. The goal of this research was to verify whether pushing a provisioning profile can be done through Intune, and if so, if it's possible to push them silently (i.e. with little disturbance to the user). We tested multiple scenarios and ultimately found that Intune is a great tool for pushing provisioning profiles to an app, but only if the app is installed after the profile is pushed.  </p>
+                <p>Provisioning profiles are certificates that are required for iOS apps to run on a device. Every year, provisioning profiles expire and must be renewed. Once they are renewed, if a user does not open an app for a 3-month period, the app will crash for the user, forcing them to reinstall. The goal of this research was to verify whether pushing a provisioning profile can be done through Intune, and if so, if it's possible to push them silently (i.e. with little disturbance to the user). 
+
+                  <br><br>We tested multiple scenarios and ultimately found that Intune is a great tool for pushing provisioning profiles to an app, but only if the app is installed after the profile is pushed.  </p>
                
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
