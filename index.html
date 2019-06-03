@@ -384,14 +384,14 @@
       </div>
       <div class="row">
         <div class="col-lg-12">
-          <form id="contactform" action="//formspree.io/jmcherayil@gmail.com" method="POST">
+<!--           <form id="contactform" action="//formspree.io/jmcherayil@gmail.com" method="POST">
               <input type="text" name = "name" placeholder="Your name">
               <input type="email" name ="_replyto" placeholder="Your email">
               <textarea name = "message" placeholder="Your message"></textarea>
               <input type="submit" value="Send">
               <input type="hidden" name="_subject" value="Website contact" />
           </form>
-
+ -->
 
           <form id="contactForm" action="//formspree.io/jmcherayil@gmail.com" method="POST" name="sentMessage" novalidate="novalidate">
             <div class="row">
@@ -419,7 +419,8 @@
               <div class="col-lg-12 text-center">
                 <input type="hidden" name="_subject" value="Someone contacted you from jcherayil.github.io"/>
                 <div id="success"></div>
-                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                <input type = "submit" class = "btn btn-primary btn-xl text-uppercase" value = "Send"/>
+                <!-- <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button> -->
               </div>
             </div>
           </form>
